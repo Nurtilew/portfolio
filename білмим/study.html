@@ -4,11 +4,10 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Портфолио — Яркий Зелёный</title>
-<meta name="description" content="Портфолио — чистый дизайн, насыщенный зелёный, анимации, адаптив.">
+<meta name="description" content="Портфолио — чистый дизайн, насыщенный зеленый, анимации, адаптив.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="study.css">
 </head>
-
 <body>
   <div class="wrap">
     <header>
@@ -29,11 +28,13 @@
       </nav>
 
       <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
-        <span class="lines"><span></span><span></span><span></span></span>
+        <span class="lines">
+          <span></span><span></span><span></span>
+        </span>
       </button>
     </header>
 
-    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+    <div id="mobileNav" class="mobile-nav" style="display:none" aria-hidden="true">
       <a href="#home">Главная</a>
       <a href="#about">Обо мне</a>
       <a href="#projects">Работы</a>
@@ -76,48 +77,40 @@
             <div class="ribbon">Главный</div>
             <div class="thumb">FITNA-SITE</div>
             <h4>FITNA — Тренировочное приложение</h4>
-            <p style="color:rgba(2,35,20,0.6);font-size:14px;margin:0">
-              Интерактивный лендинг с уровнями тренировки, анимациями и адаптивом. Готов к демонстрации.
-            </p>
+            <p style="color:rgba(40, 185, 96, 0.6);font-size:14px;margin:0">Интерактивный лендинг с уровнями тренировки, анимациями и адаптивом. Готов к демонстрации.</p>
             <div style="margin-top:auto;display:flex;gap:8px;align-items:center">
+              
               <button class="ghost" onclick="openProject('https://example.com')">Открыть</button>
-              <div class="tag">HTML · JS</div>
             </div>
           </article>
 
           <article class="project fade-up delay-2">
             <div class="thumb">ShopHub</div>
             <h4>ShopHub — Магазин</h4>
-            <p style="color:rgba(2,35,20,0.6);font-size:14px;margin:0">
-              Карточки товаров, корзина и плавные микроанимации. Лёгкая кастомизация UI.
-            </p>
+            <p style="color:rgba(40, 185, 96, 0.6);font-size:14px;margin:0">Карточки товаров, корзина и плавные микроанимации. Лёгкая кастомизация UI.</p>
             <div style="margin-top:auto;display:flex;gap:8px;align-items:center">
+             
               <button class="ghost" onclick="openProject('https://example.com')">Открыть</button>
-              <div class="tag">React</div>
             </div>
           </article>
 
           <article class="project fade-up">
             <div class="thumb">AI-Chat</div>
             <h4>AI-Chat — Ассистент</h4>
-            <p style="color:rgba(2,35,20,0.6);font-size:14px;margin:0">
-              Демонстрация интеграции чат-бота, голосовых подсказок и красивого UI.
-            </p>
+            <p style="color:rgba(40, 185, 96, 0.6);font-size:14px;margin:0">Демонстрация интеграции чат-бота, голосовых подсказок и красивого UI.</p>
             <div style="margin-top:auto;display:flex;gap:8px;align-items:center">
+              
               <button class="ghost" onclick="openProject('https://example.com')">Открыть</button>
-              <div class="tag">Node</div>
             </div>
           </article>
 
           <article class="project fade-up delay-1">
             <div class="thumb">Landing</div>
             <h4>Landing — Сертификация</h4>
-            <p style="color:rgba(2,35,20,0.6);font-size:14px;margin:0">
-              Чистый лендинг с SEO и готовностью к хостингу.
-            </p>
+            <p style="color:rgba(40, 185, 96, 0.6)  ;font-size:14px;margin:0">Чистый лендинг с SEO и готовностью к хостингу.</p>
             <div style="margin-top:auto;display:flex;gap:8px;align-items:center">
+             
               <button class="ghost" onclick="openProject('https://example.com')">Открыть</button>
-              <div class="tag">Deploy</div>
             </div>
           </article>
         </div>
@@ -126,68 +119,64 @@
       <section class="panel-row">
         <div class="card" id="skills">
           <h3 style="margin-top:0">Навыки & Технологии</h3>
-          <div class="skill-list">
-            <div class="skill-pill">HTML5</div>
-            <div class="skill-pill">CSS3 / Grid / Flex</div>
-            <div class="skill-pill">JavaScript (ES6+)</div>
-            <div class="skill-pill">React / Vite</div>
-            <div class="skill-pill">Node.js</div>
-            <div class="skill-pill">Performance</div>
-            <div class="skill-pill">Responsive</div>
+          <div class="skill-list" style="margin-top:10px">
+                <div class="skill-pill">HTML5</div>
+                <div class="skill-pill">CSS3 / Grid / Flex</div>
+                <div class="skill-pill">JavaScript (ES6+)</div>
+                <div class="skill-pill">React / Vite</div>
+                <div class="skill-pill">Node.js</div>
+                <div class="skill-pill">Performance</div>
+                <div class="skill-pill">Responsive</div>
           </div>
 
           <div class="metrics">
             <div class="metric">
-              <div class="big">99%</div>
-              <div class="small">Качество UI</div>
+              <div style="font-weight:900;font-size:20px">99%</div>
+              <div style="color:rgba(2,35,20,0.6);font-size:12px">Качество UI</div>
             </div>
             <div class="metric">
-              <div class="big">0.6s</div>
-              <div class="small">Средняя загрузка</div>
+              <div style="font-weight:900;font-size:20px">0.6s</div>
+              <div style="color:rgba(2,35,20,0.6);font-size:12px">Средняя загрузка</div>
             </div>
           </div>
         </div>
 
         <aside class="card" id="contact">
           <h3 style="margin-top:0">Связаться</h3>
-          <p style="color:rgba(2,35,20,0.6);margin-bottom:6px">
-            Оставь сообщение — отвечу быстро. Для реальной отправки подключи Formspree (см. инструкцию в коде).
-          </p>
+          <p style="color:rgba(2,35,20,0.6);margin-bottom:6px">Оставь сообщение — отвечу быстро. Для реальной отправки подключи Formspree (см. инструкцию в коде).</p>
 
           <form id="contactForm" data-formspree="">
             <input id="cf-name" name="name" type="text" placeholder="Ваше имя" required />
             <input id="cf-email" name="email" type="email" placeholder="Email" required />
-            <textarea id="cf-msg" name="message" placeholder="Коротко о проекте или вопросе" required></textarea>
+            <textarea id="cf-msg" name="message" placeholder="Коротко о проекте или вопросe" required></textarea>
 
-            <div class="form-actions">
+            <div style="display:flex;gap:10px;align-items:center">
               <button type="submit" class="send" id="sendBtn">Отправить</button>
-              <button type="button" class="ghost" id="copyMail">Копировать email</button>
+              <button type="button" class="H" id="copyMail">Копировать email</button>
             </div>
 
-            <div id="formStatus"></div>
+            <div id="formStatus" style="margin-top:10px;min-height:24px"></div>
           </form>
         </aside>
       </section>
 
       <section id="about" class="card" style="margin-top:18px">
-        <h3>Обо мне</h3>
-        <div class="about-color">
-            <p>Я создаю интерфейсы с фокусом на UX, производительность и коммерческий результат.</p>
-            <ul>
+        <h3 style="margin-top:0">Обо мне</h3>
+        <p style="color: #00b33c;">Я создаю интерфейсы с фокусом на UX, производительность и коммерческий результат. Люблю чистую типографику, продуманные микровзаимодействия и смелые визуальные решения.</p>
+        <ul style="margin-top:12px;color: #00b33c;list-style:disc;padding-left:18px">
+          <div class="about-div">
               <li>Проекты: лендинги, SPA, e-commerce</li>
               <li>Инструменты: React, Vite, Node, Git</li>
               <li>Готовность: коммерческие и фриланс-задачи</li>
-            </ul>
-        </div>
+          </div>
+        </ul>
       </section>
 
       <section id="info" class="card" style="margin-top:18px">
-        <h3>Контакты</h3>
-        <div class="info-color">
-            <p>Город: Алматы, Казахстан</p>
-            <p>Телефон: +7 (777) 123-45-67</p>
-            <p>Email: <strong id="publicEmail">email@example.com</strong></p>
-        </div>
+          <h3 style="margin-top:0">Контакты</h3>
+            <p style="color: #00b33c;">Город: Алматы, Казахстан</p>
+            <p style="color: #00b33c;">Телефон: +7 (777) 123-45-67</p>
+            <p style="color:rgba(2,35,20,0.6)">Email: <strong id="publicEmail">email@example.com</strong></p>
       </section>
 
       <footer>
@@ -203,17 +192,21 @@
   const mobileNav = document.getElementById('mobileNav');
   burger.addEventListener('click', () => {
     const active = burger.classList.toggle('active');
-    mobileNav.style.display = active ? 'flex' : 'none';
-    burger.setAttribute('aria-expanded', active);
-    mobileNav.setAttribute('aria-hidden', !active);
-  });
-
-  document.querySelectorAll('#mobileNav a').forEach(a => {
-    a.addEventListener('click', () => {
-      burger.classList.remove('active');
+    burger.setAttribute('aria-expanded', active ? 'true' : 'false');
+    if(active){
+      mobileNav.style.display = 'flex';
+      mobileNav.setAttribute('aria-hidden', 'false');
+    } else {
       mobileNav.style.display = 'none';
       mobileNav.setAttribute('aria-hidden', 'true');
-      burger.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.querySelectorAll('#mobileNav a').forEach(a=>{
+    a.addEventListener('click',()=>{
+      burger.classList.remove('active');
+      mobileNav.style.display='none';
+      mobileNav.setAttribute('aria-hidden','true');
+      burger.setAttribute('aria-expanded','false');
     });
   });
 
@@ -232,48 +225,49 @@
     sendBtn.disabled = true;
     sendBtn.textContent = 'Отправка...';
 
-    const formspreeURL = form.getAttribute('data-formspree');
+    const formspreeURL = form.getAttribute('data-formspree'); 
+
     const payload = {
-      name: form['name'].value,
-      email: form['email'].value,
-      message: form['message'].value
+      name: document.getElementById('cf-name').value,
+      email: document.getElementById('cf-email').value,
+      message: document.getElementById('cf-msg').value
     };
 
-    if(formspreeURL && formspreeURL.length > 5){
+    if(formspreeURL && formspreeURL.trim().length > 5){
+
       try{
         const res = await fetch(formspreeURL, {
           method: 'POST',
-          headers: {'Accept':'application/json','Content-Type':'application/json'},
+          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
         if(res.ok){
-          statusEl.innerHTML = '<span style=\"color:#16a34a\">✅ Сообщение отправлено! Спасибо.</span>';
+          statusEl.innerHTML = '<span class="status">✅ Сообщение отправлено! Спасибо.</span>';
           form.reset();
         } else {
-          statusEl.innerHTML = '<span style=\"color:#cc3d3d\">Ошибка при отправке.</span>';
+          const data = await res.json().catch(()=>({}));
+          statusEl.innerHTML = '<span style="color:#cc3d3d">Ошибка: ' + (data.error||res.statusText) + '</span>';
         }
-      }catch{
-        statusEl.innerHTML = '<span style=\"color:#cc3d3d\">Сетевая ошибка. Попробуйте позже.</span>';
-      }finally{
+      }catch(err){
+        statusEl.innerHTML = '<span style="color:#cc3d3d">Сетевая ошибка. Попробуйте позже.</span>';
+      } finally {
         sendBtn.disabled = false;
         sendBtn.textContent = 'Отправить';
       }
     } else {
+
       await new Promise(r=>setTimeout(r,900));
-      statusEl.innerHTML = '<span style=\"color:#16a34a\">✅ Сообщение успешно отправлено (демо)!</span>';
+      statusEl.innerHTML = '<span class="status">✅ Сообщение успешно отправлено (демо)!</span>';
       form.reset();
       sendBtn.disabled = false;
       sendBtn.textContent = 'Отправить';
     }
   });
 
+
   document.getElementById('copyMail').addEventListener('click', ()=>{
     const email = document.getElementById('publicEmail').textContent;
-    navigator.clipboard.writeText(email).then(()=>{
-      alert('Email скопирован: ' + email);
-    }).catch(()=>{
-      alert('Не удалось скопировать email.');
-    });
+    navigator.clipboard?.WriteText(email).then(()=>{ alert('Email скопирован: ' + email); }).catch(()=>{ alert('Копирование не доступно'); });
   });
 </script>
 </body>

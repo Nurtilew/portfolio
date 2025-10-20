@@ -152,7 +152,6 @@
 
             <div style="display:flex;gap:10px;align-items:center">
               <button type="submit" class="send" id="sendBtn">Отправить</button>
-              <button type="button" class="H" id="copyMail">Копировать email</button>
             </div>
 
             <div id="formStatus" style="margin-top:10px;min-height:24px"></div>
@@ -263,19 +262,11 @@
       sendBtn.textContent = 'Отправить';
     }
   });
-
-
-document.getElementById('copyMail').addEventListener('click', () => {
-  const email = document.getElementById('publicEmail').textContent;
-  navigator.clipboard?.writeText(email).then(() => { 
-    alert('Email скопирован: ' + email); 
-  }).catch(() => { 
-    alert('Копирование не доступно'); 
-  });
 });
 </script>
 </body>
 </html>
+
 
 
 

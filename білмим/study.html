@@ -267,9 +267,13 @@
 
   document.getElementById('copyMail').addEventListener('click', ()=>{
     const email = document.getElementById('publicEmail').textContent;
-    navigator.clipboard?.WriteText(email).then(()=>{ alert('Email скопирован: ' + email); }).catch(()=>{ alert('Копирование не доступно'); });
-  });
+    navigator.clipboard?.writeText(email).then(()=>{ 
+  alert('Email скопирован: ' + email); 
+}).catch(()=>{ 
+  alert('Копирование не доступно'); 
+});
 </script>
 </body>
 </html>
+
 

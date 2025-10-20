@@ -265,15 +265,17 @@
   });
 
 
-  document.getElementById('copyMail').addEventListener('click', ()=>{
-    const email = document.getElementById('publicEmail').textContent;
-    navigator.clipboard?.writeText(email).then(()=>{ 
-  alert('Email скопирован: ' + email); 
-}).catch(()=>{ 
-  alert('Копирование не доступно'); 
+document.getElementById('copyMail').addEventListener('click', () => {
+  const email = document.getElementById('publicEmail').textContent;
+  navigator.clipboard?.writeText(email).then(() => { 
+    alert('Email скопирован: ' + email); 
+  }).catch(() => { 
+    alert('Копирование не доступно'); 
+  });
 });
 </script>
 </body>
 </html>
+
 
 
